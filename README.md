@@ -178,12 +178,47 @@ expense-tracker/
 
 MIT License - feel free to use this project for personal or commercial purposes.
 
-## 🤝 Contributing
+## 📚 Documentation
 
-Contributions welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
+- Complete setup guide in this README
+- Supabase integration: [`SUPABASE_SETUP.md`](./SUPABASE_SETUP.md)
+- Cloudflare deployment: [`CLOUDFLARE_DEPLOYMENT.md`](./CLOUDFLARE_DEPLOYMENT.md)
+
+## 🚢 Deployment
+
+### Deploy to Cloudflare Pages (Recommended)
+
+1. **Push your code to GitHub** (✅ Already done!)
+2. **Go to [Cloudflare Pages](https://pages.cloudflare.com/)**
+3. **Connect your GitHub repository**
+4. **Configure build settings:**
+   - Framework: `Next.js`
+   - Build command: `npm run build`
+   - Build output: `.next`
+5. **Add environment variables:**
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+6. **Deploy!**
+
+See [`CLOUDFLARE_DEPLOYMENT.md`](./CLOUDFLARE_DEPLOYMENT.md) for detailed instructions.
+
+### Alternative: Deploy to Vercel
+
+1. Go to [Vercel](https://vercel.com)
+2. Import your GitHub repository
+3. Add environment variables
+4. Deploy
+
+## 📱 Mobile Access
+
+Once deployed, you can:
+- Open the app in any mobile browser
+- **Add to Home Screen** for app-like experience
+- Data syncs across all your devices (with Supabase)
+
+---
+
+**Built by Shaz** • [shazahmed290@gmail.com](mailto:shazahmed290@gmail.com)
 
 ## 📞 Support
 
